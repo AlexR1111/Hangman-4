@@ -1,4 +1,4 @@
-const words = ['abstraction', 'deterjan', 'stuhlgang', 'evilEren'];
+const words = ['abstraction', 'deterjan', 'stuhlgang', 'evileren'];
 let randomWord;
 let guessedWord;
 let attemptsLeft;
@@ -7,7 +7,7 @@ let guessedLetters;
 function neuesSpiel() {
     randomWord = words[Math.floor(Math.random() * words.length)];
     guessedWord = randomWord.split('').map(() => '_');
-    attemptsLeft = 10;
+    attemptsLeft = 5;
     guessedLetters = [];
     updateAnzeige();
 }
