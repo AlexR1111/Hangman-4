@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Spiel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hangman</h1>
+    <div id="wort"></div>
+    <div id="eingabe">
+        <input type="text" id="buchstabe" maxlength="1">
+        <button onclick="rateBuchstabe()">Raten</button>
+    </div>
+    <div id="versuche"></div>
+    <button onclick="neuesSpiel()">Neues Spiel</button>
+    <script src="script.js"></script>
+</body>
+</html>

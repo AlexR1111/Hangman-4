@@ -1,0 +1,27 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #5b5b5b4a;
+}
+
+h1 {
+    background-color: #27673b;
+    color: rgb(254, 254, 254);
+    padding: 20px;
+}
+
+#wort, #versuche {
+    margin: 20px 0;
+    font-size: 24px;
+}
+
+#eingabe {
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
