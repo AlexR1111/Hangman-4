@@ -1,0 +1,19 @@
+/*Der Ausdruck randomWord.split('').map(char => (char === ' ' ? ' ' : '_')) kann in zwei Teile aufgeteilt werden:
+
+randomWord.split(''):
+
+split('') teilt die Zeichenkette randomWord in ein Array von einzelnen Zeichen auf. Zum Beispiel, wenn randomWord der String "Das Pferd" ist, ergibt split('') das Array ['D', 'a', 's', ' ', 'P', 'f', 'e', 'r', 'd'].
+
+.map(char => (char === ' ' ? ' ' : '_')):
+
+map ist eine Methode, die auf jedes Element des Arrays eine Funktion anwendet und ein neues Array mit den Ergebnissen der Funktion zurückgibt.
+
+Die Funktion (char => (char === ' ' ? ' ' : '_')) prüft jedes Zeichen char des Arrays:
+
+Wenn char ein Leerzeichen ' ' ist, bleibt es ein Leerzeichen ' '.
+
+Andernfalls wird char durch einen Unterstrich '_' ersetzt.
+
+Das Ziel dieses Codes ist es, ein Array zu erstellen, das für alle Buchstaben in randomWord Unterstriche '_' enthält, während Leerzeichen ' ' erhalten bleiben. Wenn randomWord zum Beispiel "Das Pferd" ist, ergibt der Code das Array ['_', '_', '_', ' ', '_', '_', '_', '_', '_'].
+
+Dieses Array kann dann verwendet werden, um den aktuellen Zustand des erratenen Wortes im Hangman-Spiel anzuzeigen, wobei die Leerzeichen korrekt dargestellt werden.*/
