@@ -1,4 +1,4 @@
-const words = ['abstraction', 'deterjan', 'stuhlgang', 'evileren'];
+const words = ['abstraction', 'deterjan', 'stuhlgang', 'evil eren'];
 let randomWord;
 let guessedWord;
 let attemptsLeft;
@@ -6,7 +6,7 @@ let guessedLetters;
 
 function neuesSpiel() {
     randomWord = words[Math.floor(Math.random() * words.length)];
-    guessedWord = randomWord.split('').map(() => '_');
+    randomWord.split('').map(char => (char === ' ' ? ' ' : '_'));
     attemptsLeft = 5;
     guessedLetters = [];
     updateAnzeige();
@@ -21,6 +21,10 @@ function rateBuchstabe() {
     const buchstabe = document.getElementById("buchstabe").value.toLowerCase();
     document.getElementById("buchstabe").value = '';
 
+    if (buchstabe.length !== 1 || !buchstabe.match(/[a-z]/i)) {
+    alert('Bitte gib einen einzelnen Buchstaben ein.');
+    return;
+}
     if (guessedLetters.includes(buchstabe)) {
         alert('Du hast diesen Buchstaben schon geraten!');
         return;
